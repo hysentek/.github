@@ -9,7 +9,7 @@
 ![products](https://img.shields.io/badge/products%20advanced-3-1c7ed6?style=flat-square)
 ![blockers](https://img.shields.io/badge/blockers-0-868e96?style=flat-square)
 
-<sub>Daily engineering report · Monday, 23 November 2026 · Asia/Saigon</sub>
+<sub>Daily engineering report · Monday, 23 November 2026 · Asia/Saigon · snapshot 15:33</sub>
 
 </div>
 
@@ -25,8 +25,6 @@
 | Lines added | **≈ 34.8k** |
 | Products advanced | **3** |
 | Blockers | **0** |
-
-<sub>Snapshot at 15:33 (UTC+7). Figures exclude this report's own publishing commits.</sub>
 
 Three product tracks moved forward in one day: the **Agent Bus** platform, its
 **DeepSeek Harness bridge**, and the **Stage Show** live-theater plugin.
@@ -121,6 +119,8 @@ with recordings you can seek, step and speed up.
 | `onboard` | Scaffolded, no code yet | 0 | 0 | — |
 | **Total** | | **24** | **235** | **+34.8k** |
 
+<sub>Figures are a snapshot at 15:33 UTC+7 on 23 November 2026 and exclude this report's own publishing and metadata commits.</sub>
+
 ---
 
 ## 🇻🇳 Tóm tắt cho lãnh đạo
@@ -142,6 +142,6 @@ with recordings you can seek, step and speed up.
 
 **Public repositories** · [`.github`](https://github.com/hysentek/.github) · [`hysen-dsh-branding`](https://github.com/hysentek/hysen-dsh-branding)
 
-<sub>Snapshot taken 23 November 2026 at 15:33 (UTC+7) from repository activity for 00:00–24:00 (UTC+7). Figures exclude this report's own publishing commits.</sub>
+<sub>Report generated from repository activity on 23 November 2026, 00:00–24:00 (UTC+7).</sub>
 
 </div>
