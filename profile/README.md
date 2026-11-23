@@ -26,6 +26,8 @@
 | Products advanced | **3** |
 | Blockers | **0** |
 
+<sub>Snapshot at 15:33 (UTC+7). Figures exclude this report's own publishing commits.</sub>
+
 Three product tracks moved forward in one day: the **Agent Bus** platform, its
 **DeepSeek Harness bridge**, and the **Stage Show** live-theater plugin.
 
@@ -140,6 +142,6 @@ with recordings you can seek, step and speed up.
 
 **Public repositories** · [`.github`](https://github.com/hysentek/.github) · [`hysen-dsh-branding`](https://github.com/hysentek/hysen-dsh-branding)
 
-<sub>Report generated from repository activity on 23 November 2026, 00:00–24:00 (UTC+7).</sub>
+<sub>Snapshot taken 23 November 2026 at 15:33 (UTC+7) from repository activity for 00:00–24:00 (UTC+7). Figures exclude this report's own publishing commits.</sub>
 
 </div>
