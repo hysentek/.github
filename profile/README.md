@@ -102,7 +102,7 @@ with recordings you can seek, step and speed up.
 |:--|:--|
 | **Welcome** | Onboarding README tightened to the exact toolchain an engineer needs to start |
 | **Org profile** | `hysentek/.github` created; this page is now the org's public front door |
-| **Onboard** | Repository scaffolded for the upcoming guided onboarding flow |
+| **Onboard** | Repository created and reserved for the upcoming guided onboarding flow |
 | **Hysen DSH branding** | White-label identity for the harness Web app (published) |
 
 ---
