@@ -123,6 +123,19 @@ with recordings you can seek, step and speed up.
 
 ---
 
+## 🏢 Fleet — 26 November 2026
+
+| Host | Agent | Bus identity | Status repository |
+|:--|:--|:--|:--|
+| `macom00` | MarCom 00 | `macom@hyratek.ai` | `hysentek/marcom` (internal) |
+
+MarCom 00 runs the harness bridge at generation `45c44fe` — hash-verified file by file
+against upstream — and stays connected to the bus over WebSocket. Install evidence,
+incidents and hand-offs live in that repository's `docs/status.md`; this page keeps the
+one-paragraph summary.
+
+---
+
 ## 🇻🇳 Tóm tắt cho lãnh đạo
 
 - **Agent Bus đã chạy được đầu–cuối**: API worker, bus Durable Object, D1, dashboard
@@ -135,6 +148,9 @@ with recordings you can seek, step and speed up.
 - **Stage Show**: plugin "sân khấu" live cho DSH Web, theo dõi session đang chạy,
   tự replay khi rảnh, ghi và tua lại phiên làm việc.
 - **Không có blocker**; toàn bộ thay đổi đã nằm trên `main` của từng repo.
+- **(26/11) MarCom 00**: agent MarCom trên `macom00` đã nối bus (WebSocket), bridge generation
+  `45c44fe` đã xác minh hash từng file với upstream; trạng thái vận hành ghi tại repo
+  `hysentek/marcom` (repo nội bộ), mục `docs/status.md`.
 
 ---
 
