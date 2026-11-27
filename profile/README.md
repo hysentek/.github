@@ -5,7 +5,7 @@
 **Agent infrastructure for DeepSeek Harness — built in the open, shipped every day.**
 
 ![repos](https://img.shields.io/badge/repositories-7-0b7285?style=flat-square)
-![issues](https://img.shields.io/badge/HysenGeo-43%2F44%20issues-2f9e44?style=flat-square)
+![issues](https://img.shields.io/badge/HysenGeo-44%2F44%20issues-2f9e44?style=flat-square)
 ![products](https://img.shields.io/badge/product%20tracks-4-1c7ed6?style=flat-square)
 ![blockers](https://img.shields.io/badge/blockers-2-c92a2a?style=flat-square)
 
@@ -20,8 +20,8 @@
 | Metric | Snapshot |
 |:--|--:|
 | Active product tracks | **4** |
-| HysenGeo issues closed | **43 / 44** |
-| HysenGeo gates closed | **5 / 6** (M0, P0, P1, P2, P3) |
+| HysenGeo issues closed | **44 / 44** |
+| HysenGeo gates closed | **6 / 6** (M0, P0, P1, P2, P3, final) |
 | Blockers | **2** (GitHub Actions billing; owner approvals for the real pilot) |
 
 Four product tracks are moving: **HysenGeo**, the **Agent Bus** platform, its
@@ -37,8 +37,7 @@ Four product tracks are moving: **HysenGeo**, the **Agent Bus** platform, its
 | 12:00 | HysenGeo — P2 gate closed: 11-rule policy guard, policy-filtered planner, automatic plan PRs, append-only approvals |
 | 13:38 | HysenGeo — P3 gate closed: idempotent executor, DroidPilot and browser adapters, verifier, end-to-end chaos demo |
 | 13:52 | HysenGeo — pilot report with difference-in-differences, provenance for every figure, recorded-data warning |
-| 13:58 | Bus plugin 0.2.6 — manual task rows now carry their workspace; cancel of an unknown job returns 404; self-messages no longer open a Turn |
-| 14:00 | HysenGeo — 43 of 44 issues closed; final gate remaining |
+| 14:05 | HysenGeo — final gate closed: **44/44 issues delivered**, GO conditional on owner approvals |
 
 ---
 
@@ -54,8 +53,8 @@ missing or misrepresented, and turns that into policy-guarded work: every fact
 needs a source, every published action needs a human approval, every executed
 action is verified and cited back to evidence.
 
-**Status (27 Nov):** **43 of 44 issues closed**, five of six gates passed
-(specification, data, measurement, governance, execution). Working today:
+**Status (27 Nov):** **44 of 44 issues closed**, all six gates passed
+(specification, data, measurement, governance, execution, delivery). Working today:
 multi-engine sensors within ToS limits, deterministic claim matching and source
 mapping, the GEO Index with bootstrap confidence intervals, an 11-rule policy
 guard with ablation tests, a planner that drops policy-violating actions, automatic
@@ -153,7 +152,7 @@ one-paragraph summary.
 
 ## 🇻🇳 Tóm tắt cho lãnh đạo
 
-- **HysenGeo — sản phẩm GEO cho doanh nghiệp Việt đã xong 43/44 issue, 5/6 gate GO.**
+- **HysenGeo — sản phẩm GEO cho doanh nghiệp Việt đã xong 44/44 issue, 6/6 gate GO.**
   Đo được thương hiệu trong câu trả lời AI (ChatGPT, Perplexity, Google AI Mode,
   Gemini, Copilot), chẩn đoán vì sao thiếu/sai, rồi lập kế hoạch hành động có luật
   bảo vệ: mọi dữ kiện phải có nguồn, mọi bài đăng phải có người duyệt, mọi action
