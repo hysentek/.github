@@ -5,11 +5,11 @@
 **Agent infrastructure for DeepSeek Harness — built in the open, shipped every day.**
 
 ![repos](https://img.shields.io/badge/repositories-7-0b7285?style=flat-square)
-![commits today](https://img.shields.io/badge/2026--11--23-24%20commits-2f9e44?style=flat-square)
-![products](https://img.shields.io/badge/products%20advanced-3-1c7ed6?style=flat-square)
-![blockers](https://img.shields.io/badge/blockers-0-868e96?style=flat-square)
+![issues](https://img.shields.io/badge/HysenGeo-43%2F44%20issues-2f9e44?style=flat-square)
+![products](https://img.shields.io/badge/product%20tracks-4-1c7ed6?style=flat-square)
+![blockers](https://img.shields.io/badge/blockers-2-c92a2a?style=flat-square)
 
-<sub>Daily engineering report · Monday, 23 November 2026 · Asia/Saigon · snapshot 15:33</sub>
+<sub>Engineering snapshot · Friday, 27 November 2026 · Asia/Saigon · snapshot 14:00</sub>
 
 </div>
 
@@ -17,44 +17,59 @@
 
 ## 📊 Today at a glance
 
-| Metric | Today |
+| Metric | Snapshot |
 |:--|--:|
-| Repositories with commits | **5 / 7** |
-| Commits | **24** |
-| Files changed | **235** |
-| Lines added | **≈ 34.8k** |
-| Products advanced | **3** |
-| Blockers | **0** |
+| Active product tracks | **4** |
+| HysenGeo issues closed | **43 / 44** |
+| HysenGeo gates closed | **5 / 6** (M0, P0, P1, P2, P3) |
+| Blockers | **2** (GitHub Actions billing; owner approvals for the real pilot) |
 
-Three product tracks moved forward in one day: the **Agent Bus** platform, its
+Four product tracks are moving: **HysenGeo**, the **Agent Bus** platform, its
 **DeepSeek Harness bridge**, and the **Stage Show** live-theater plugin.
 
 ---
 
-## 🕐 The day, hour by hour
+## 🕐 Recent milestones
 
 | Time (UTC+7) | Milestone |
 |:--|:--|
-| 10:46 | Agent Bus — architecture spec and project skeleton published |
-| 11:40 | Agent Bus — worker API, durable-object bus, D1 schema, React ops dashboard and tests implemented end to end |
-| 11:44 | Agent Bus — organisation email onboarding with real OTP delivery |
-| 12:28 | Agent Bus — agent email service: HTML send, inbound capture, inbox API |
-| 12:32 | Agent Bus — shared-key bootstrap, public onboarding docs, footer links |
-| 13:21 | DSH bridge — first working plugin: sessions as bus addresses |
-| 13:28 | DSH bridge — WebSocket-first transport, long-poll fallback, failover verified against production |
-| 13:37 | DSH bridge — zero-config self-registration for new agents |
-| 13:38 | Welcome — onboarding README refreshed |
-| 14:33 | DSH bridge — agent working protocol (EN + VI) and milestone announcements |
-| 14:43 | Org profile — this page published |
-| 14:54 | DSH bridge — repository-as-source-of-truth status policy and task acknowledgement |
-| 15:01 | Stage Show — cross-session live theater with automatic replay |
-| 15:21 | Welcome — final README pass |
+| 11:24 | HysenGeo — P1 gate closed: five sensors, deterministic diagnosis, source map, GEO Index, baseline pipeline |
+| 12:00 | HysenGeo — P2 gate closed: 11-rule policy guard, policy-filtered planner, automatic plan PRs, append-only approvals |
+| 13:38 | HysenGeo — P3 gate closed: idempotent executor, DroidPilot and browser adapters, verifier, end-to-end chaos demo |
+| 13:52 | HysenGeo — pilot report with difference-in-differences, provenance for every figure, recorded-data warning |
+| 13:58 | Bus plugin 0.2.6 — manual task rows now carry their workspace; cancel of an unknown job returns 404; self-messages no longer open a Turn |
+| 14:00 | HysenGeo — 43 of 44 issues closed; final gate remaining |
 
 ---
 
 ## 🏗️ What we are building
 
-### 1 · Hysen Agent Bus
+### 1 · HysenGeo
+
+> Generative Engine Optimization for Vietnamese businesses — measured, not promised.
+
+An end-to-end system that measures how a brand appears in AI answers
+(ChatGPT, Perplexity, Google AI Mode, Gemini, Copilot), diagnoses why it is
+missing or misrepresented, and turns that into policy-guarded work: every fact
+needs a source, every published action needs a human approval, every executed
+action is verified and cited back to evidence.
+
+**Status (27 Nov):** **43 of 44 issues closed**, five of six gates passed
+(specification, data, measurement, governance, execution). Working today:
+multi-engine sensors within ToS limits, deterministic claim matching and source
+mapping, the GEO Index with bootstrap confidence intervals, an 11-rule policy
+guard with ablation tests, a planner that drops policy-violating actions, automatic
+plan pull requests, an append-only approval flow, idempotent execution through
+DroidPilot and browser adapters, verification with content hashes, control-group
+difference-in-differences, and a client pilot report with per-figure provenance.
+
+**Not yet:** a real-data pilot. Every number so far is fake/recorded and the
+reports say so; running the real baseline needs owner-approved prompt sets,
+API keys and posting accounts.
+
+---
+
+### 2 · Hysen Agent Bus
 
 > A central nervous system for internal AI agents.
 
@@ -68,7 +83,7 @@ a test suite.
 
 ---
 
-### 2 · Hysen Agent Bus → DeepSeek Harness bridge
+### 3 · Hysen Agent Bus → DeepSeek Harness bridge
 
 > Every agent gets an address; every inbound message becomes a Session task.
 
@@ -83,7 +98,7 @@ address in the install flow, a bilingual working protocol, and the milestone
 
 ---
 
-### 3 · DSH Stage Show
+### 4 · DSH Stage Show
 
 > Live AI engineering theater, straight from the conversation.
 
@@ -138,19 +153,24 @@ one-paragraph summary.
 
 ## 🇻🇳 Tóm tắt cho lãnh đạo
 
-- **Agent Bus đã chạy được đầu–cuối**: API worker, bus Durable Object, D1, dashboard
-  React, và dịch vụ email cho agent — đã gửi OTP thật trên `hyratek.ai`.
-- **Cầu nối sang DeepSeek Harness**: mỗi agent có địa chỉ riêng, nhận việc tự động
-  qua Session, trả lời tự động; transport WebSocket là chính, long-poll dự phòng,
-  đã kiểm tra failover trên môi trường production.
-- **Cài đặt không cần cấu hình**: agent mới tự đăng ký bằng shared key, tên và địa
-  chỉ nằm ngay trong prompt cài đặt.
-- **Stage Show**: plugin "sân khấu" live cho DSH Web, theo dõi session đang chạy,
-  tự replay khi rảnh, ghi và tua lại phiên làm việc.
-- **Không có blocker**; toàn bộ thay đổi đã nằm trên `main` của từng repo.
-- **(26/11) MarCom 00**: agent MarCom trên `macom00` đã nối bus (WebSocket), bridge generation
-  `45c44fe` đã xác minh hash từng file với upstream; trạng thái vận hành ghi tại repo
-  `hysentek/marcom` (repo nội bộ), mục `docs/status.md`.
+- **HysenGeo — sản phẩm GEO cho doanh nghiệp Việt đã xong 43/44 issue, 5/6 gate GO.**
+  Đo được thương hiệu trong câu trả lời AI (ChatGPT, Perplexity, Google AI Mode,
+  Gemini, Copilot), chẩn đoán vì sao thiếu/sai, rồi lập kế hoạch hành động có luật
+  bảo vệ: mọi dữ kiện phải có nguồn, mọi bài đăng phải có người duyệt, mọi action
+  đã chạy phải được xác minh và trỏ bằng chứng.
+- **Chưa chốt số thật**: toàn bộ số hiện tại là fake/recorded, báo cáo ghi rõ không
+  dùng để công bố. Muốn chạy pilot thật cần sếp duyệt: bộ prompt mẫu (#15 + ngành #2),
+  số liệu kinh doanh (#8), cấp key (Perplexity/Gemini) và tài khoản đăng bài.
+- **Agent Bus đã chạy đầu–cuối**: API worker, bus Durable Object, D1, dashboard React,
+  email agent thật trên `hyratek.ai`; cầu nối DeepSeek Harness cho mỗi agent một địa
+  chỉ, nhận việc tự động qua Session, WebSocket là chính và long-poll dự phòng.
+- **Stage Show**: plugin "sân khấu" live cho DSH Web, tự replay khi rảnh, ghi và tua
+  lại phiên làm việc.
+- **2 blocker**: (1) **GitHub Actions bị billing** — CI không chạy, kỹ thuật đang bù
+  bằng gate local đầy đủ trước mỗi merge; (2) **owner chưa duyệt** bộ prompt và số
+  liệu để chạy pilot thật.
+- **(26/11) MarCom 00**: agent MarCom trên `macom00` đã nối bus (WebSocket), bridge
+  generation `45c44fe` xác minh hash từng file; trạng thái ghi tại `hysentek/marcom`.
 
 ---
 
@@ -158,6 +178,6 @@ one-paragraph summary.
 
 **Public repositories** · [`.github`](https://github.com/hysentek/.github) · [`hysen-dsh-branding`](https://github.com/hysentek/hysen-dsh-branding)
 
-<sub>Report generated from repository activity on 23 November 2026, 00:00–24:00 (UTC+7).</sub>
+<sub>Snapshot of repository state on 27 November 2026, 14:00 UTC+7. Details live in each repository's docs/status.md.</sub>
 
 </div>
